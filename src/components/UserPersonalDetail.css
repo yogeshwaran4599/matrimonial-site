@@ -1,0 +1,98 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+.user-personal-wrapper {
+  background-color: rgba(196, 171, 171, 0.247);
+  width: 100%;
+  height: 100vh;
+}
+
+.user-personal-heading {
+  color: brown;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.user-personal-info {
+  background-color: white;
+  width: 50rem;
+  height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.user-personal-maritial {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-religion {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-diet {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-height {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-community {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-qualification {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-detail {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-college {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-employment {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-designation {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-company {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-income {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-about {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-profile {
+  display: flex;
+  gap: 2rem;
+}
+.user-personal-button {
+  background-color: aqua;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 1.2rem;
+}

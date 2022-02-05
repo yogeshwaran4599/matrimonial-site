@@ -1,0 +1,51 @@
+.verification {
+  margin: 20px 0;
+  padding: 3rem 9%;
+}
+
+.verify-content {
+  text-align: center;
+  color: red;
+}
+
+.verify-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10% 0;
+  align-items: center;
+  text-align: center;
+}
+
+.verification-icon > .MuiSvgIcon-root {
+  font-size: 6rem !important;
+  color: blue;
+}
+
+@media only screen and (max-width: 991px) {
+  .verification-icon > p {
+    width: 9rem;
+  }
+  .verification-icon > .MuiSvgIcon-root {
+    height: 10rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .verify-icons {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 0;
+    align-items: center;
+    text-align: center;
+  }
+  .verification-icon {
+    margin-bottom: 15px;
+  }
+  .verification-icon > p {
+    margin: 15px;
+    text-align: center;
+  }
+  .verification-icon > .MuiSvgIcon-root {
+    font-size: 13rem !important;
+  }
+}

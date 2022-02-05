@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  list-style-type: none;
+}
+
+.menu-icon {
+  background-color: #666;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu-icon > span {
+  outline: #fff solid 0.2px;
+  padding: 3px;
+}
+
+.menu-icon > span:hover,
+.menu-icon > h1:hover,
+.menu-icon > .MuiSvgIcon-root:hover {
+  cursor: pointer;
+  color: rgb(134, 12, 12);
+}
+
+.profile {
+  flex: 0.5;
+}
+
+.profile > .profile-logo {
+  font-size: 1.2rem;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  color: #666;
+  position: relative;
+  top: 7%;
+}
+
+.profile > .profile-logo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.profile > .MuiSvgIcon-root {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-5px, 5px);
+}
+
+.profile > .MuiSvgIcon-root:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.profile > h3 {
+  position: relative;
+  top: 4rem;
+  left: 5rem;
+  color: #666;
+}
+
+.navbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  z-index: 10;
+  height: 100%;
+  width: 13rem;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+}
+
+.navbar-wrapper.active {
+  left: -50%;
+  box-shadow: none;
+}
+
+.nav-menu > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.user-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 15%;
+  left: 1rem;
+  border: 10px solid white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.navbar-list {
+  flex: 0.5;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.navbar-list > .nav-menu > li:hover {
+  margin-left: 15px;
+}
+
+.nav-menu > li > a {
+  padding: 10px 20px;
+  font-size: 17px;
+  color: #666;
+  text-decoration: none;
+  text-transform: capitalize;
+  align-items: center;
+}
+
+.nav-menu > li > a:hover {
+  color: inherit;
+}

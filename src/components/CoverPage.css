@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.coverpage {
+  background: url(../images/matrimonal.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.header-right > span:hover {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header-left {
+  flex: 0.5;
+  color: black;
+  font-size: 2rem;
+}
+
+.header-right {
+  font-size: 1.5rem;
+}
+
+.header-right > span {
+  padding-right: 2rem;
+}
+
+.login-form {
+  background-color: white;
+  width: 21rem;
+  position: absolute;
+  top: 10vh;
+  right: 12rem;
+  padding: 10px;
+  transition: all 0.5s ease-out;
+}
+
+.login-form.active {
+  top: -50%;
+}
+
+.login-form > p {
+  padding: 5px;
+  text-align: center;
+}
+
+.login-form > .fa-times {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.login-form > .fa-times:hover {
+  cursor: pointer;
+}
+
+.login-form > p:hover {
+  color: lightseagreen;
+  cursor: pointer;
+}
+
+.login-form > input {
+  padding: 5px;
+  width: 100%;
+}
+
+.login-btn {
+  background-color: lightseagreen;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+.login-btn:hover {
+  background-color: darkcyan;
+  cursor: pointer;
+}
+
+.login-form .flex > input,
+.login-form .flex > label,
+.login-form .flex > a {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.login-form .flex > input:hover,
+.login-form .flex > label:hover,
+.login-form .flex > a:hover {
+  color: lightseagreen;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  color: white;
+  font-weight: normal;
+  height: 20vh;
+  width: 50rem;
+  text-align: center;
+  align-items: center;
+}
+
+.content > h3 {
+  position: absolute;
+  top: 40%;
+  width: 50rem;
+  text-align: center;
+  align-items: center;
+  color: rgb(10, 164, 236);
+}
+
+.content:hover,
+.content > h3:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+  }
+  .content > h3 {
+    position: absolute;
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+  .login-form > input {
+    padding: 5px;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .flex {
+    text-align: center;
+    align-items: center;
+  }
+  .login-form .flex > input,
+  .login-form .flex > label,
+  .login-form .flex > a {
+    font-size: 0.7rem;
+    text-align: center;
+    align-items: center;
+  }
+  .login-form .flex > input {
+    width: 0.7rem;
+    position: relative;
+    top: 5px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+  }
+  .content > h3 {
+    position: absolute;
+    top: 40%;
+  }
+}
